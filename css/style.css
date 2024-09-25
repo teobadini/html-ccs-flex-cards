@@ -17,14 +17,35 @@
     "wdth" 100;
 } */
 
-h1 {
+body {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px 0 40px 0;
+    color: #e53170;
 }
 
 p {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
 }
