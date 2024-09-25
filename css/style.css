@@ -49,3 +49,22 @@ p {
 .container-flex {
     display: flex;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex-basis: 100%;
+    background-color: #e53170;
+    border: solid black;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .col {
+      flex: 1;
+      width: calc(100% / 2 - 30px);
+    }
+  }
