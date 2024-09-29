@@ -1,21 +1,12 @@
+/******
+RESET
+******/
+
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
 }
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 700
-
-.fredoka-<uniquifier> {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
 
 body {
     font-family: "Fredoka", sans-serif;
@@ -34,6 +25,10 @@ header h1 {
     color: #e53170;
 }
 
+.d-flex {
+  display: flex;
+}
+
 p {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
@@ -42,29 +37,18 @@ p {
 
 .container {
     padding: 0 20px;
-    max-width: 1180px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
-.container-flex {
-    display: flex;
-}
-
 .row {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-  }
+    gap: 60px;
+}
   
-  .col {
-    flex-basis: 100%;
-    background-color: #e53170;
-    border: solid black;
-  }
-  
-  @media screen and (min-width: 800px) {
-    .col {
-      flex: 1;
-      width: calc(100% / 2 - 30px);
-    }
-  }
+.col {
+  width: calc(100% / 3);
+  background-color: #e53170;
+  border: solid black;
+  height: 100px;
+}
