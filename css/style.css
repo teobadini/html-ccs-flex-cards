@@ -42,16 +42,35 @@ p {
     margin: 0 auto;
 }
 
+.content {
+    background-color: #0f0e17;
+}
+
 .content-image {
     width: 100px;
     height: 100px;
     flex-shrink: 0;
-    background-color: red;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .content-info {
     flex-grow: 1;
-    background-color: aliceblue;
+    padding: 17px;
+    color: white;
+}
+
+.content-info .role {
+    margin: 2px 0;
+}
+
+.content-info a {
+    text-decoration: none;
+    color: lightblue;
 }
 
 .row {
@@ -62,14 +81,16 @@ p {
 .col {
   width: 100%;
   margin: 15px;
-  background-color: #e53170;
-  border: solid black;
 }
 
 @media screen and (min-width: 760px) {
     .col {
         width: calc(100% / 2 - 30px);
       }  
+
+      .content-image {
+        width: 150px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
