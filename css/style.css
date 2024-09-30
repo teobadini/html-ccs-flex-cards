@@ -48,7 +48,7 @@ p {
 
 .content-image {
     width: 100px;
-    height: 100px;
+    height: auto;
     flex-shrink: 0;
 }
 
@@ -88,7 +88,7 @@ p {
         width: calc(100% / 2 - 30px);
       }  
 
-      .content-image {
+    .content-image {
         width: 150px;
     }
 }
@@ -97,4 +97,8 @@ p {
     .col {
         width: calc(100% / 3 - 30px);
       }  
+    
+    .content-image {
+        width: 100px;
+    }
 }
